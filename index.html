@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Downloader</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>YouTube Video Downloader</h1>
+    <form action="/download" method="post">
+        <input type="text" name="url" placeholder="Εισάγετε τον σύνδεσμο του βίντεο" required>
+        <button type="submit">Λήψη</button>
+    </form>
+</body>
+</html>
